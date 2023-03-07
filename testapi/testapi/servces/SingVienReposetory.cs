@@ -62,9 +62,9 @@ namespace testapi.servces
             }return null;
         }
 
-        public void update(SinhVien s)
+        public void update(int id,SinhVien s)
         {
-            var sinhvien = _dbContext.sinhViens.SingleOrDefault(a=> a.Id== s.Id);
+            var sinhvien = _dbContext.sinhViens.SingleOrDefault(a=> a.Id==id);
             s.Id = sinhvien.Id;
             s.Name = sinhvien.Name;
             s.Age = sinhvien.Age;

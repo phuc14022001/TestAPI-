@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\new_API_1\\testapi\\test1\\test1.csproj": {}
+    "D:\\TestAPI\\testapi\\test1\\test1.csproj": {}
   },
   "projects": {
-    "D:\\new_API_1\\testapi\\test1\\test1.csproj": {
+    "D:\\TestAPI\\testapi\\test1\\test1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\new_API_1\\testapi\\test1\\test1.csproj",
+        "projectUniqueName": "D:\\TestAPI\\testapi\\test1\\test1.csproj",
         "projectName": "test1",
-        "projectPath": "D:\\new_API_1\\testapi\\test1\\test1.csproj",
+        "projectPath": "D:\\TestAPI\\testapi\\test1\\test1.csproj",
         "packagesPath": "C:\\Users\\TH\\.nuget\\packages\\",
-        "outputPath": "D:\\new_API_1\\testapi\\test1\\obj\\",
+        "outputPath": "D:\\TestAPI\\testapi\\test1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\new_API_1\\testapi\\testapi\\testapi.csproj": {
-                "projectPath": "D:\\new_API_1\\testapi\\testapi\\testapi.csproj"
+              "D:\\TestAPI\\testapi\\testapi\\testapi.csproj": {
+                "projectPath": "D:\\TestAPI\\testapi\\testapi\\testapi.csproj"
               }
             }
           }
@@ -44,37 +44,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "FluentAssertions": {
-              "target": "Package",
-              "version": "[6.10.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.InMemory": {
+            "MockQueryable.Moq": {
               "target": "Package",
               "version": "[6.0.1, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.3.2, )"
-            },
-            "Moq": {
-              "target": "Package",
-              "version": "[4.18.4, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.2, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.2, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.5, )"
             }
           },
           "imports": [
@@ -83,28 +55,22 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\new_API_1\\testapi\\testapi\\testapi.csproj": {
+    "D:\\TestAPI\\testapi\\testapi\\testapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\new_API_1\\testapi\\testapi\\testapi.csproj",
+        "projectUniqueName": "D:\\TestAPI\\testapi\\testapi\\testapi.csproj",
         "projectName": "testapi",
-        "projectPath": "D:\\new_API_1\\testapi\\testapi\\testapi.csproj",
+        "projectPath": "D:\\TestAPI\\testapi\\testapi\\testapi.csproj",
         "packagesPath": "C:\\Users\\TH\\.nuget\\packages\\",
-        "outputPath": "D:\\new_API_1\\testapi\\testapi\\obj\\",
+        "outputPath": "D:\\TestAPI\\testapi\\testapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -132,52 +98,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

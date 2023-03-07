@@ -38,6 +38,60 @@ namespace test1.Service
 
         }
 
+        [Fact]
+        public async Task add_ReturnSinhVienController()
+        {
+            var SV = SinhViendata.NewSinhVien();
+            _myDbContext.sinhViens.AddRange(SinhViendata.GetSinhViens());
+            _myDbContext.SaveChangesAsync();
+            var sut  = new SingVienReposetory(_myDbContext);
+
+            var result = sut.Add(SV);
+
+            int expectedRecordCount = (SinhViendata.GetSinhViens().Count() + 1);
+            _myDbContext.sinhViens.Count().Should().Be(expectedRecordCount);
+        }
+        [Fact]
+        public async Task delete_ReturnSinhVienController()
+        {
+            var SV = SinhViendata.updateSinhVien().Id;
+            _myDbContext.sinhViens.AddRange(SinhViendata.GetSinhViens());
+            _myDbContext.SaveChangesAsync();
+            var sut = new SingVienReposetory(_myDbContext);
+
+            sut.delete(SV);
+
+            int expectedRecordCount = (SinhViendata.GetSinhViens().Count() - 1);
+            _myDbContext.sinhViens.Count().Should().Be(expectedRecordCount);
+        }
+        [Fact]
+        public async Task GetByid_ReturnSinhienController()
+        {
+            var SV = SinhViendata.updateSinhVien();
+            _myDbContext.sinhViens.AddRange(SinhViendata.updateSinhVien());
+            _myDbContext.SaveChangesAsync();
+            var sut = new SingVienReposetory(_myDbContext);
+
+            var result = sut.SinhVienByGet(SV.Id);
+
+         //   int expectedRecordCount = SinhViendata.GetSinhViens().Count();
+         //   result.Should().Be(expectedRecordCount);
+            Assert.IsType<SinhVien>(result);
+        }
+        [Fact]
+        public async Task Update_ReturnSinhienController()
+        {
+            var SV = SinhViendata.updateSinhVien();
+            _myDbContext.sinhViens.AddRange(SinhViendata.GetSinhViens());
+            _myDbContext.SaveChangesAsync();
+            var sut = new SingVienReposetory(_myDbContext);
+
+            var result = sut.SinhVienByGet(SV.Id);
+
+
+            Assert.Equal(SV.Name, result.Name);
+            Assert.IsType<SinhVien>(result);
+        }
         public void Dispose()
         {
             _myDbContext.Database.EnsureCreated();

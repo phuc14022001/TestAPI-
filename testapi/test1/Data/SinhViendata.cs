@@ -29,9 +29,25 @@ namespace test1.Data
                 }
             };
         }
+        public static SinhVien updateSinhVien()
+        {
+            return new SinhVien
+            {
+                    Id = 1,
+                    Name= "Test",
+                    Age= 30,
+                    Nganh="ktpm"
+          
+            };
+        }
         public static List<SinhVien> GetEmptyTodos()
         {
             return new List<SinhVien>();
+        }
+        public static SinhVien GetEmptyTodos1()
+        {
+            return new SinhVien() { };
+
         }
         public static SinhVien NewSinhVien()
         {
@@ -40,7 +56,7 @@ namespace test1.Data
                 Name = "Test3",
                 Age = 32,
                 Nganh = "CNTT"
-            };
+            }; 
         }
         public static SinhVien Newid()
         {

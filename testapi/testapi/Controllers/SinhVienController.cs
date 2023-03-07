@@ -55,8 +55,8 @@ namespace testapi.Controllers
             if (id != s.Id) return BadRequest();
             try
             {
-                _iSinhVien.update(s);
-                return NoContent(); // thông báo thành công và trả về kết quả ( 204 )
+                _iSinhVien.update(id,s);
+                return NoContent(); // thông báo không thành công và trả về kết quả ( 204 )
             }
             catch
             {

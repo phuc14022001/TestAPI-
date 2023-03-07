@@ -9,7 +9,7 @@ namespace testapi.servces
 
         SinhVien SinhVienByGet(int id);
         SinhVien Add(SinhVien s);
-        void update(SinhVien s);
+        void update(int id,SinhVien s);
         void delete(int id);
     }
 }
